@@ -12,13 +12,8 @@ export default function Home() {
       icon: <FaGithubSquare />
     },
     {
-      text: "TikTok",
-      to: "https://tiktok.com/KarimHeshamKhalil",
-      icon: <AiFillTikTok className="text-[41px]" />
-    },
-    {
       text: "Instagram",
-      to: "https://github.com/KarimHeshamKhalil",
+      to: "https://www.instagram.com/restaurants_websites?igsh=MW1icnI1aHl6cWljcw%3D%3D&utm_source=qr",
       icon: <FaInstagramSquare />
     },
   ]
@@ -52,7 +47,7 @@ export default function Home() {
 
         <div className="flex items-center gap-x-2 mt-4 text-4xl">
           {socialLinks.map((link, index) => (
-            <Link className="transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 duration-100" href={link.to} key={index}>
+            <Link target="_blank" className="transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 duration-100" href={link.to} key={index}>
               {link.icon}
             </Link>
           ))}
@@ -60,12 +55,20 @@ export default function Home() {
       </div>
 
       <div className="mt-10 px-4">
-        <h3 className="ml-8 md:ml-12 text-neutral-700">First Demo Website</h3>
+        <h3 className="flex items-center ml-8 md:ml-12 text-neutral-700">
+          <span>First Demo Website</span>
+
+          <Link target="_blank" href={"https://restuarant-website-wine.vercel.app/"} className="bg-black ml-4 px-4 py-1 text-neutral-100 text-2xl">VISIT HERE</Link>
+        </h3>
         <ImagesCarousel images={firstWebImages} />
       </div>
 
       <div className="mt-10 px-4">
-        <h3 className="ml-8 md:ml-12 text-neutral-700">Second Demo Website</h3>
+        <h3 className="flex items-center ml-8 md:ml-12 text-neutral-700">
+            <span>Second Demo Website</span>
+
+            <Link target="_blank" href={"https://restaurant-website-second-template.vercel.app/"} className="bg-black ml-4 px-4 py-1 text-neutral-100 text-2xl">VISIT HERE</Link>
+          </h3>
         <ImagesCarousel images={secondWebImages} />
       </div>
     </div>
