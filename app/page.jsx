@@ -54,7 +54,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-10 px-4">
+      <div className="mt-10 px-4 text-xl sm:text-3xl">
         <h3 className="flex items-center ml-8 md:ml-12 text-neutral-700">
           <span>First Demo Website</span>
 
@@ -63,7 +63,7 @@ export default function Home() {
         <ImagesCarousel images={firstWebImages} />
       </div>
 
-      <div className="mt-10 px-4">
+      <div className="mt-10 px-4 text-xl sm:text-3xl">
         <h3 className="flex items-center ml-8 md:ml-12 text-neutral-700">
             <span>Second Demo Website</span>
 
